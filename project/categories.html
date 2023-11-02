@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project/css/owl-carousel.css">
+    <link rel="stylesheet" href="project/css/owl.theme.default.min.css">
+
+    <!-- owl js -->
+    <script src="project/js/jquery.min.js"></script>
+    <script src="project/js/owl.carousel.js"></script>
+</head>
+<style>
+    html {
+        font-size: 16px;
+    }
+
+    .mt-5 {
+        margin-top: 4.7rem !important;
+    }
+
+    .search3 {
+        width: 140px;
+        height: 33px;
+        cursor: pointer;
+        margin-top: 5px;
+        margin-left: 5px;
+
+    }
+
+    .search4 {
+        margin-top: 11px;
+        margin-left: -24px;
+    }
+
+
+
+    .first {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        margin-left: -22px;
+
+
+    }
+
+    .first2 {
+        font-size: 1rem;
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    .first1 {
+        font-size: 1.2rem;
+        color: black;
+    }
+
+    .margin4 {
+        margin-top: 7rem;
+    }
+
+    .image1 {
+        width: 50px;
+        height: 187px;
+        align-items: center;
+    }
+
+    .button9 {
+        width: 240px;
+        height: 55px;
+        background-color: #fff;
+        color: blue;
+        font-size: 20px;
+        border-radius: 10px;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .button9:hover {
+        background-color: rgb(85, 85, 255);
+        color: #fff;
+    }
+
+    .button10 {
+        width: 240px;
+        height: 55px;
+        background-color: green;
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .button10:hover {
+        background-color: white;
+        color: #000;
+    }
+
+
+    .img3 {
+        width: 319px;
+        height: auto;
+        object-fit: contain;
+        margin: 7px 0 0 10px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg d-md-block d-none fixed-top secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <form class="d-flex ms-auto search">
+                    <input class="form-control " type="search" placeholder="Search for Product/Service">
+                    <button class="btn btn-outline-primary search1" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav ms-5 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">
+                            <div class="class">
+
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">
+                            <div class="class">
+
+                                <i class="fa-solid fa-message"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">
+                            <div class="class"><i class="fa-solid fa-bell"></i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="food8 ms-auto">
+                    <!-- <button type="button" class=" button3"></button> -->
+                    <button type="button" class="button3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Join Us
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Button trigger modal -->
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3 needs-validation" novalidate action="index.html">
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Firstname"
+                                required>
+                            <div class="invalid-feedback">
+                                Please Enter your firstname
+                            </div>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Lastname"
+                                required>
+                            <div class="invalid-feedback">
+                                Please Enter your lastname
+                            </div>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">City</label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom04" class="form-label">State</label>
+                            <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="NSP">nsp</option>
+                                <option>cp</option>
+                                <option>noida</option>
+
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationCustom05" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="validationCustom05" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Agree to terms and conditions
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <button class="button4" type="submit" href="">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary d-block d-md-none fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-1" href="index.html">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <img src="images/logo.png" alt="" class="images8">
+            </a>
+            <div id="myOverlay" class="overlay " style="display: block;">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                <div class="overlay-content">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="button" onclick="closeSearch()"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+            <p class="openBtn ms2" onclick="openSearch()"><svg xmlns="http://www.w3.org/2000/svg" height="2em"
+                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                </svg></p>
+            <!-- <button type="button" class=" button2">Join Now</button> -->
+            <!-- Button trigger modal -->
+
+            <!-- <button type="button" class=" button2">Join Now</button> -->
+            <button type="button" class="button2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Join Us
+            </button>
+        </div>
+    </nav>
+
+
+    <main class="bg1">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-3 mt-2">
+                    <p style="font-size: 18px;" color="white">Iron Syrup(142 Products Available)</p>
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button button5" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    Related Category
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li> <a class="ab" href="#">Mineral Supplements</a></li>
+                                        <li> <a class="ab" href="#">Calcium Tablet</a></li>
+                                        <li> <a class="ab" href="#">Vitamin D3 Tablets & Capsules</a></li>
+                                        <li><a class="ab" href="#"> Zinc Tablet</a></li>
+                                        <li><a class="ab" href="#">Calcium Capsule</a></li>
+                                        <li><a class="ab" href="#"> Calcium Syrups</a></li>
+                                        <li><a class="ab" href="#">Iron Tablets</a></li>
+                                        <li><a class="ab" href="#">Calcium Gluconate</a></li>
+                                        <li><a class="ab" href="#"> Liquid Calcium</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed button5 " type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Business Type
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li> <a class="ab" href="#">Mineral Supplements</a></li>
+                                        <li> <a class="ab" href="#">Calcium Tablet</a></li>
+                                        <li> <a class="ab" href="#">Vitamin D3 Tablets & Capsules</a></li>
+                                        <li><a class="ab" href="#"> Zinc Tablet</a></li>
+                                        <li><a class="ab" href="#">Calcium Capsule</a></li>
+                                        <li><a class="ab" href="#"> Calcium Syrups</a></li>
+                                        <li><a class="ab" href="#">Iron Tablets</a></li>
+                                        <li><a class="ab" href="#">Calcium Gluconate</a></li>
+                                        <li><a class="ab" href="#"> Liquid Calcium</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-9 mt-2">
+                    <div class="class4">
+
+
+                        <div class="class2">
+
+                        </div>
+                        <div class="class1">
+                            <button type="button" class="button8">
+                                grid view
+                            </button>
+                            <button type="button" class="button8">
+                                list view
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="retangle mt-2">
+                        <ul class="first">
+                            <li class="first1">Location</li>
+                            <li>
+                                <form class="d-flex me-auto search3">
+                                    <input class="form-control " type="search" placeholder="Search ">
+                                    <i class="fa-solid fa-magnifying-glass search4"></i>
+                                </form>
+                            </li>
+                            <li class="first1 ms-4"><a href="#"> Near By</a></li>
+                            <li><span class="border-start ms-2"></span></li>
+                            <li class="ms-2 first1"><a href="#">All India</a></li>
+                            <li class="ms-2 first1"><a href="#">Hojai</a></li>
+                            <li class="ms-2 first1"><a href="#">Bangalore</a></li>
+                            <li class="ms-2 first1"><a href="#">Lucknow</a></li>
+                            <li class="ms-2 first1"><a href="#">Kolkata</a></li>
+                            <li class="ms-2 first1"><a href="#">Pune</a></li>
+                            <li class="ms-2 first1"><a href="#">Nagaon</a></li>
+
+                        </ul>
+                    </div>
+                    <h4 class="mt-5">Popular Banana Plants Products</h4>
+                    <div class="owl-carousel owl-theme owl-carousels margin4">
+                        <div class="item">
+                            <div class="card card3" style="width: 18rem;">
+                                <img src="images/image.jpg" class="card-img-top image1" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title first2">grand naine banana plant</h5>
+                                    <p class="card-text first2">₹10 - ₹14 /Piece</p>
+                                    <p class="first2">Primara Agritech</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card card3" style="width: 18rem;">
+                                <img src="images/image1.jpg" class="card-img-top image1" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title first2">grand naine banana plant</h5>
+                                    <p class="card-text first2">₹10 - ₹14 /Piece</p>
+                                    <p class="first2">Primara Agritech</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class="card card3" style="width: 18rem;">
+                                <img src="images/image2.jpg" class="card-img-top image1" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">grand naine banana plant</h5>
+                                    <p class="card-text">₹10 - ₹14 /Piece</p>
+                                    <p>Primara Agritech</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card card3" style="width: 18rem;">
+                                <img src="images/image3.jpg" class="card-img-top image1" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">grand naine banana plant</h5>
+                                    <p class="card-text">₹10 - ₹14 /Piece</p>
+                                    <p>Primara Agritech</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card card3" style="width: 18rem;">
+                                <img src="images/image4.jpg" class="card-img-top image1" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">grand naine banana plant</h5>
+                                    <p class="card-text">₹10 - ₹14 /Piece</p>
+                                    <p>Primara Agritech</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card card3" style="width: 18rem;">
+                                <img src="images/image4.jpg" class="card-img-top image1" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">grand naine banana plant</h5>
+                                    <p class="card-text">₹10 - ₹14 /Piece</p>
+                                    <p>Primara Agritech</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card card3" style="width: 18rem;">
+                                <img src="images/image4.jpg" class="card-img-top image1" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">grand naine banana plant</h5>
+                                    <p class="card-text">₹10 - ₹14 /Piece</p>
+                                    <p>Primara Agritech</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card card3" style="width: 18rem;">
+                                <img src="images/image4.jpg" class="card-img-top image1" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">grand naine banana plant</h5>
+                                    <p class="card-text">₹10 - ₹14 /Piece</p>
+                                    <p>Primara Agritech</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card card3" style="width: 18rem;">
+                                <img src="images/image4.jpg" class="card-img-top image1" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">grand naine banana plant</h5>
+                                    <p class="card-text">₹10 - ₹14 /Piece</p>
+                                    <p>Primara Agritech</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card card3" style="width: 18rem;">
+                                <img src="images/image4.jpg" class="card-img-top image1" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">grand naine banana plant</h5>
+                                    <p class="card-text">₹10 - ₹14 /Piece</p>
+                                    <p>Primara Agritech</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card card3" style="width: 18rem;">
+                                <img src="images/image4.jpg" class="card-img-top image1" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">grand naine banana plant</h5>
+                                    <p class="card-text">₹10 - ₹14 /Piece</p>
+                                    <p>Primara Agritech</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card " style="width: 53rem; height: auto;display: flex; flex-direction: row;">
+                        <div class="">
+                            <img src="images/image1.jpg" class="card-img-top img3" alt="...">
+                        </div>
+                        <div class="card-body mt-2">
+                            <h5 class="card-title">Red Banana Plant</h5>
+                            <p class="card-text">Rs 100 - Rs 120 / Piece</p>
+                            <p class="first2">Plant Type : Fruit Plant</p>
+                            <p class="first2">Packaging Type Available : Crate, Plastic Bag, Net Bag, Carton</p>
+                            <p class="first2">Other Necessities : Full Sun Exposure</p>
+                            <p class="first2">Payable : Extra Amount (Shipping Cost)</p>
+                            <p class="first2">Fruit Type : Banana</p>
+                            <a href="#">More..</a>
+                        </div>
+                        <div class="card-title bg2 ms-1">
+                            <p class="mt-5 first2 ms-2">4Yrs Rudra Agro Nursery </p>
+                            <a href="#" class="ms-2"><i class="fa-solid fa-location-dot me-1"></i>Alandi, Pune,
+                                Maharashtra</a>
+                            <div>
+                                <button type="button" class="button9  mt-5" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    <i class="fa-solid fa-phone d-flex me-1"></i>08252055
+                                </button>
+                            </div>
+                            <div> <button type="button" class="button10 mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Join Us
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+
+    </footer>
+    <script>
+        function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        // Close the full screen search box
+        function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
+        }
+        $('.owl-carousels').owlCarousel({
+            loop: false,
+            margin: 10,
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
